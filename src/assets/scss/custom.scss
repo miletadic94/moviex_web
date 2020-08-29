@@ -1,0 +1,97 @@
+@import "./variables.scss";
+
+a {
+  color: $admin-primary-color;
+}
+
+// hide input buttons
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// bootstraps overlay
+.custom-control-input {
+  z-index: 1;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: $admin-primary-color;
+  background-color: $admin-primary-color;
+}
+
+.dropdown-menu {
+  right: 10px;
+  left: auto;
+}
+
+.fa-plus-square {
+  cursor: pointer;
+  font-size: 24px;
+  color: $admin-primary-color;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: $admin-primary-color;
+  border-color: lighten($color: $admin-primary-color, $amount: 10);
+}
+
+.page-link {
+  color: $admin-primary-color;
+  border-color: $admin-primary-color;
+  user-select: none;
+  &:hover {
+    color: $admin-primary-color;
+  }
+}
+
+.row {
+  a {
+    color: $admin-primary-color;
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+.cart-container {
+  position: relative;
+  cursor: pointer;
+  .cart-badge {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: crimson;
+    color: white;
+    bottom: 0;
+    left: 15px;
+  }
+
+  .cart-item-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.cart-item-remove {
+  font-size: 22px;
+  color: crimson;
+  margin-left: 15px;
+}

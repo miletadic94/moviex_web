@@ -1,0 +1,138 @@
+.card-signin {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  padding: 15px 0 40px 0;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-group {
+  min-height: 100px;
+  margin: 0;
+}
+
+.form-label {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+}
+
+.form-label input::-webkit-input-placeholder,
+.form-label input:-ms-input-placeholder,
+.form-label input::-ms-input-placeholder,
+.form-label input::placeholder,
+.form-label input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-control {
+  padding: 5px;
+  min-height: 50px;
+  border-radius: 0;
+
+  &:focus {
+    border-radius: 0;
+    border-color: $admin-primary-color;
+    box-shadow: none;
+  }
+  &.error {
+    border-color: red;
+  }
+}
+
+.error-label {
+  letter-spacing: 0.3px;
+  font-size: 12px;
+  margin: 0 2px;
+  color: red;
+}
+
+.error-form {
+  display: block;
+  text-align: center;
+  min-height: 20px;
+  font-size: 12px;
+  color: red;
+}
+
+// ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
+
+.input-date-container {
+  min-height: 70px !important;
+  border-radius: 0 !important;
+}
+
+.search-field {
+  padding: 5px;
+  width: 100%;
+}
